@@ -1,0 +1,256 @@
+/*=========================================
+        XV HANAMI - ANIMATIONS
+=========================================*/
+
+/*========== APARICIÓN ==========*/
+
+.hero{
+
+    animation:fadeHero 1.5s ease;
+}
+
+@keyframes fadeHero{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*========== RAMAS ==========*/
+
+.branch.left{
+
+    transform-origin:top left;
+
+    animation:branchLeft 8s ease-in-out infinite;
+
+}
+
+.branch.right{
+
+    transform-origin:top right;
+
+    animation:branchRight 8s ease-in-out infinite;
+
+}
+
+@keyframes branchLeft{
+
+    0%,100%{
+
+        transform:rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:rotate(3deg);
+
+    }
+
+}
+
+@keyframes branchRight{
+
+    0%,100%{
+
+        transform:rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:rotate(-3deg);
+
+    }
+
+}
+
+/*========== FAROLES ==========*/
+
+.lantern{
+
+    transform-origin:top center;
+
+    animation:lanternSwing 5s ease-in-out infinite;
+
+}
+
+@keyframes lanternSwing{
+
+    0%,100%{
+
+        transform:rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:rotate(2.5deg);
+
+    }
+
+    50%{
+
+        transform:rotate(0deg);
+
+    }
+
+    75%{
+
+        transform:rotate(-2.5deg);
+
+    }
+
+}
+
+/*========== BOTÓN ==========*/
+
+#startButton{
+
+    animation:buttonFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes buttonFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-4px);
+
+    }
+
+}
+/*=========================================
+            PÉTALOS
+=========================================*/
+
+.petal{
+
+    animation:petalFall linear forwards;
+
+}
+
+@keyframes petalFall{
+
+    0%{
+
+    transform:
+    translate(0,-150px)
+    rotate(0deg);
+
+}
+    20%{
+
+        transform:
+        translate(20px,20vh)
+        rotate(90deg);
+
+    }
+
+    40%{
+
+        transform:
+        translate(-15px,45vh)
+        rotate(180deg);
+
+    }
+
+    60%{
+
+        transform:
+        translate(25px,70vh)
+        rotate(270deg);
+
+    }
+
+    80%{
+
+        transform:
+        translate(-10px,90vh)
+        rotate(330deg);
+
+    }
+
+    100%{
+
+        transform:
+        translate(15px,115vh)
+        rotate(var(--rotation))
+
+    }
+
+}
+@keyframes petalFallLeft{
+
+    0%{
+
+        transform:translate(0,-150px) rotate(0deg);
+
+    }
+
+    100%{
+
+        transform:translate(-120px,115vh) rotate(var(--rotation));
+
+    }
+
+}
+
+@keyframes petalFallRight{
+
+    0%{
+
+        transform:translate(0,-150px) rotate(0deg);
+
+    }
+
+    100%{
+
+        transform:translate(120px,115vh) rotate(var(--rotation));
+
+    }
+
+}
+/*=========================================
+                BRUMA
+=========================================*/
+
+.mist{
+
+    animation:mistMove 18s ease-in-out infinite;
+
+}
+
+@keyframes mistMove{
+
+    0%,100%{
+
+        transform:translateX(-20px);
+
+    }
+
+    50%{
+
+        transform:translateX(20px);
+
+    }
+
+}

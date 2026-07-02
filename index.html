@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XV Hanami | Nazaret</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+    rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Decoración -->
+
+    <img src="assets/flowers/Rama-izquierda.png" class="branch left" alt="Rama izquierda">
+
+    <img src="assets/flowers/Rama-derecha.png" class="branch right" alt="Rama derecha">
+
+    <img src="assets/lanterns/Farol-izquierdo.png" class="lantern lantern-left" alt="Farol izquierdo">
+
+    <img src="assets/lanterns/Farol-derecho.png" class="lantern lantern-right" alt="Farol derecho">
+
+    <div class="lantern-glow left"></div>
+    <div class="lantern-glow right"></div>
+    <div id="petals-container"></div>
+
+    <div class="mist"></div>
+
+    <div class="night-layer"></div>
+
+    <!--====================================
+                HERO
+    =====================================-->
+
+    <main class="hero">
+
+        <p class="subtitle">
+            Mis XV Años
+        </p>
+
+        <h1>
+            Nazaret
+        </h1>
+
+        <p class="phrase">
+            Un sueño está por comenzar...
+        </p>
+
+        <button id="startButton">
+            Abrir invitación
+        </button>
+
+    </main>
+
+   <!--====================================
+        ESCENA DEL SOBRE
+=====================================-->
+
+<section id="envelopeScene">
+
+    <div class="envelope">
+
+        <div class="envelope-back"></div>
+
+        <div class="letter">
+
+            <div class="letter-content">
+
+                <p class="letter-small">
+                    Mis XV Años
+                </p>
+
+                <h2>
+                    Nazaret
+                </h2>
+
+                <p class="letter-phrase">
+                    Con mucha ilusión te invito a celebrar este día tan especial.
+                </p>
+
+                <!--==============================
+                        FECHA
+                ==============================-->
+
+                <div class="date-block">
+
+                    <p class="date-day">
+                        SÁBADO
+                    </p>
+
+                    <div class="date-number">
+                        01
+                    </div>
+
+                    <p class="date-month">
+                        AGOSTO · 2026
+                    </p>
+
+                </div>
+
+                <!--==============================
+                        CEREMONIA
+                ==============================-->
+
+                <div class="ceremony-block event-block">
+
+                    <p class="event-label">
+                        Ceremonia religiosa
+                    </p>
+
+                    <p class="event-time">
+                        2:00 p.m.
+                    </p>
+
+                    <p class="event-place">
+                        Ex Convento de San Francisco
+                    </p>
+
+                    <p class="event-location">
+                        Ixtacuixtla, Tlaxcala
+                    </p>
+
+                </div>
+
+                <!--==============================
+                        RECEPCIÓN
+                ==============================-->
+
+                <div class="party-block event-block">
+
+                    <p class="event-label">
+                        Recepción
+                    </p>
+
+                    <p class="event-time">
+                        Al término de la ceremonia
+                    </p>
+
+                    <p class="event-place">
+                        Auditorio
+                    </p>
+
+                    <p class="event-location">
+                        San Gabriel Popocatla, Ixtacuixtla
+                    </p>
+
+                </div>
+
+<!--==============================
+        UBICACIONES
+==============================-->
+
+<div class="locations-block">
+
+    <p class="section-label">
+        Ubicaciones
+    </p>
+
+    <div class="qr-grid">
+
+        <div class="qr-card">
+
+            <a href="https://maps.app.goo.gl/rm7TjEHg9HXEJeEv9" target="_blank" class="qr-link">
+                <img src="assets/qr/qr-ceremonia.png" alt="QR ubicación ceremonia" class="location-qr">
+            </a>
+
+            <p class="qr-label">
+                Ceremonia
+            </p>
+
+            <a href="https://maps.app.goo.gl/rm7TjEHg9HXEJeEv9" target="_blank" class="map-button">
+                Ver ubicación
+            </a>
+
+        </div>
+
+        <div class="qr-card">
+
+            <a href="https://maps.app.goo.gl/2vJiYJ6Dg1Zmfugm8" target="_blank" class="qr-link">
+                <img src="assets/qr/qr-recepcion.png" alt="QR ubicación recepción" class="location-qr">
+            </a>
+
+            <p class="qr-label">
+                Recepción
+            </p>
+
+            <a href="https://maps.app.goo.gl/2vJiYJ6Dg1Zmfugm8" target="_blank" class="map-button">
+                Ver ubicación
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<!--==============================
+        CUENTA REGRESIVA
+==============================-->
+
+<div class="countdown-block">
+
+    <p class="section-label">
+        Cuenta regresiva
+    </p>
+
+    <p class="countdown-intro">
+        Falta poco para este día tan especial
+    </p>
+
+    <div class="countdown-grid">
+
+        <div class="countdown-item">
+            <span id="days">00</span>
+            <p>Días</p>
+        </div>
+
+        <div class="countdown-item">
+            <span id="hours">00</span>
+            <p>Horas</p>
+        </div>
+
+        <div class="countdown-item">
+            <span id="minutes">00</span>
+            <p>Minutos</p>
+        </div>
+
+        <div class="countdown-item">
+            <span id="seconds">00</span>
+            <p>Segundos</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!--==============================
+        TE HABLARÉ DE MÍ
+==============================-->
+
+<div class="about-block">
+
+    <p class="about-intro">
+        Si deseas conocer un poquito más sobre mí...
+    </p>
+
+    <h3 class="about-title">
+        Te hablaré de mí
+    </h3>
+
+    <div class="about-cards">
+
+        <!-- Papelería creativa -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+            <img src="assets/icons/palette.png" alt="" class="about-icon icon-large">
+                    <p>Papelería creativa</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Me encanta la papelería bonita: libretas, plumones, stickers y cositas creativas que pueda usar o guardar con cariño.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Moda cómoda -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/dress.png" alt="" class="about-icon">
+                    <p>Moda cómoda</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Me gusta vestir cómoda y sencilla, con colores neutros y estilos bonitos que no sean demasiado llamativos.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mini mochilas -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/backpack.png" alt="" class="about-icon">
+                    <p>Mini mochilas</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Las mini mochilas me encantan porque son prácticas, lindas y perfectas para salir con lo necesario.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Accesorios -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/ring.png" alt="" class="about-icon">
+                    <p>Accesorios</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Prefiero los accesorios sencillos y delicados. Para mí, muchas veces los pequeños detalles hacen la diferencia.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Belleza y skincare -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/sparkle.png" alt="" class="about-icon">
+                    <p>Belleza</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Me gusta consentirme de vez en cuando con productos de belleza y skincare. Siempre es bonito dedicar un momento para cuidarse.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Música -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                   <img src="assets/icons/music.png" alt="" class="about-icon icon-large">
+                    <p>Música</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        La música siempre forma parte de mis días. Me gusta escuchar canciones que me hagan disfrutar el momento.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Voleibol -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/sport.png" alt="" class="about-icon">
+                    <p>Voleibol</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        El voleibol es uno de mis deportes favoritos. Me divierte jugarlo y compartir esos momentos con otras personas.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Detalles adorables -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/gift.png" alt="" class="about-icon">
+                    <p>Detalles adorables</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Más que el valor de un regalo, me emociona saber que fue elegido con cariño. Los pequeños detalles siempre significan mucho.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mi espacio favorito -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/lamp.png" alt="" class="about-icon icon-large">
+                    <p>Mi espacio favorito</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Me gusta decorar mi cuarto con cositas bonitas: lámparas, cuadros, cojines, peluches y detalles que lo hagan sentir especial.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Colores favoritos -->
+        <div class="about-card">
+            <div class="about-card-inner">
+
+                <div class="about-card-front">
+                    <img src="assets/icons/heart.png" alt="" class="about-icon">
+                    <p>Colores favoritos</p>
+                </div>
+
+                <div class="about-card-back">
+                    <p>
+                        Me gustan el blanco, el verde y el rojo, sobre todo cuando se combinan con tonos neutros, bonitos y nada exagerados.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+ </div>
+
+</div>
+
+<!--==============================
+        CIERRE FINAL
+==============================-->
+
+<div class="final-block">
+
+    <div class="final-flower">
+        🌸
+    </div>
+
+    <h3 class="final-title">
+        Nos veremos muy pronto...
+    </h3>
+
+    <p class="final-text">
+        Gracias por acompañarme en este pequeño recorrido.
+        Cada detalle de esta invitación fue preparado con mucha ilusión porque deseo compartir contigo uno de los días más importantes de mi vida.
+    </p>
+
+    <p class="final-text">
+        Ahora solo falta encontrarnos y disfrutar juntos este momento tan especial.
+    </p>
+
+    <p class="final-wait">
+        ¡Te espero con mucho cariño!
+    </p>
+
+    <div class="signature-divider"></div>
+
+    <div class="final-signature">
+
+        <span>Con cariño,</span>
+
+        <strong class="signature-name">Nazaret</strong>
+
+    </div>
+
+    <div class="close-divider"></div>
+
+    <button
+        id="closeLetterButton"
+        class="close-letter-button">
+
+        Cerrar la carta
+
+    </button>
+
+</div>
+
+            </div>
+
+        </div>
+
+        <div class="envelope-front"></div>
+
+        <div class="envelope-flap"></div>
+
+        <div class="seal">
+            🌸
+        </div>
+
+    </div>
+    <!--==============================
+        FIRMA DEL DESARROLLADOR
+==============================-->
+
+<div class="developer-signature">
+
+    <p class="developer-thanks">
+        Gracias por acompañarnos en este pequeño recorrido.
+    </p>
+
+    <button
+    id="restartInvitation"
+    class="restart-button">
+
+    Volver a abrir la invitación
+
+</button>
+
+    <div class="developer-line"></div>
+
+    <p class="developer-studio">
+        Hanami Studio
+    </p>
+
+    <p class="developer-role-label">
+        Diseño y desarrollo
+    </p>
+
+    <p class="developer-name">
+        Israel MenTo
+    </p>
+
+    <p class="developer-role">
+        Frontend Developer
+    </p>
+
+</div>
+
+</section>
+
+<!-- Música de fondo -->
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="assets/music/mi-reflejo.mp3" type="audio/mpeg">
+</audio>
+
+<!-- JavaScript -->
+
+<script src="js/countdown.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/lanterns.js"></script>
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/petals.js"></script>
+
+</body>
+
+</html>
