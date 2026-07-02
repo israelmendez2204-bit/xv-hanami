@@ -1767,3 +1767,30 @@ text-shadow:
     }
 
 }
+/*=========================================
+    FIX CIERRE FINAL EN CELULAR REAL
+=========================================*/
+
+@media (max-width:700px){
+
+    #envelopeScene.closing-letter{
+        align-items:flex-start;
+        padding-top:120px;
+    }
+
+    #envelopeScene.closing-letter .developer-thanks{
+        margin:22px auto 20px !important;
+        font-size:14px !important;
+        line-height:1.45 !important;
+    }
+
+    #envelopeScene.closing-letter .developer-signature{
+        bottom:16px !important;
+        max-width:310px !important;
+    }
+
+    #envelopeScene.closing-letter .developer-name{
+        font-size:36px !important;
+    }
+
+}
