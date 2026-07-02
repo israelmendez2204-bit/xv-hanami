@@ -116,3 +116,34 @@
     }
 
 }
+/*=========================================
+        AJUSTE FIRMA EN CELULAR
+=========================================*/
+
+@media (max-width: 600px){
+
+    .developer-signature{
+        bottom:28px;
+        max-width:320px;
+    }
+
+    .developer-thanks{
+        margin:0 auto 20px;
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    .developer-studio{
+        font-size:18px;
+        letter-spacing:2px;
+    }
+
+    .developer-name{
+        font-size:38px;
+    }
+
+    .developer-role{
+        font-size:13px;
+    }
+
+}
