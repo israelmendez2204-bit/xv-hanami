@@ -89,9 +89,11 @@ body{
 
 h1{
 
-    font-size:95px;
+    font-size:110px;
 
-    font-weight:500;
+    font-family:'Great Vibes', cursive;
+
+    font-weight:400;
 
     color:var(--color-texto);
 
@@ -513,7 +515,7 @@ h1{
 
     text-align:center;
 
-    color:#7A5C58;
+    color:#5F4643;
 
     overflow-y:auto;
     overflow-x:hidden;
@@ -551,7 +553,7 @@ h1{
 
     text-transform:uppercase;
 
-    color:#B7849B;
+    color:#9F6F89;
 
 }
 
@@ -574,7 +576,7 @@ h1{
 
     line-height:.9;
 
-    color:#B7849B;
+    color:#9F6F89;
 
 }
 
@@ -706,7 +708,7 @@ h1{
     font-size:11px;
     letter-spacing:3px;
     text-transform:uppercase;
-    color:#B7849B;
+    color:#7F5568;
 }
 
 .event-time{
@@ -745,9 +747,8 @@ h1{
     font-size:11px;
     letter-spacing:4px;
     text-transform:uppercase;
-    color:#B7849B;
+    color:#7F5568;
 }
-
 /*=========================================
         NÚMERO PROTAGONISTA
 =========================================*/
